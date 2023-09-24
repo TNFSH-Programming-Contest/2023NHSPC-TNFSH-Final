@@ -1,15 +1,27 @@
 #include "testlib.h"
 using namespace std;
 
-const int MAXN = 1000;
+const int maxN = 100'000, maxC = 1'000'000'000;
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) 
+{
 	registerValidation(argc, argv);
-	// about testlib, see https://codeforces.com/blog/entry/18426
-
-	// TODO
-	inf.readInt(1, MAXN, "n");
+	map<pair<int, int>, int> mp;
+	int n = inf.readInt(1, maxN, "n");
+	inf.readSpace();
+	int m = inf.readInt(1, maxN, "m");
 	inf.readEoln();
+	ensure(n * m <= maxN);
+
+	for (int i = 1; i <= n; i++)
+		for (int j = 1; j <= m; j++)
+		{
+			inf.readInt(-maxC, maxC, "a");
+			if (j == m)
+				inf.readEoln();
+			else 
+				inf.readSpace();
+		}
 	inf.readEof();
 
 	return 0;

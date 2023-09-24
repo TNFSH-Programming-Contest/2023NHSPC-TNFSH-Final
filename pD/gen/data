@@ -1,8 +1,104 @@
-# see https://github.com/ioi-2017/tps/blob/master/docs/README.md#gendata
-# TODO
-@subtask samples
+@testset sample-nm
 manual example-1.in
 
-@subtask full
-gen	20
-gen	30
+@testset sample-check
+manual example-2.in
+
+@subtask samples
+@include sample-nm
+@include sample-check
+
+@subtask check
+@include sample-check
+gen-abs1 1 1 1 0
+gen-abs1 2 2 1 0
+gen-abs1 1 100000 1 0
+gen-abs1 100000 1 1 0
+gen-abs1 10000 10 5 0
+gen-abs1 10000 10 5 1
+gen-abs1 10 10000 5 0
+gen-abs1 10 10000 5 1
+gen-abs1 2500 40 5 0
+gen-abs1 2500 40 5 1
+gen-abs1 40 2500 5 0
+gen-abs1 40 2500 5 1
+gen-abs1 500 200 2 1
+gen-abs1 500 200 4 0
+gen-abs1 500 200 10 0
+gen-abs1 500 200 100 0
+gen-abs1 200 500 2 1
+gen-abs1 200 500 4 0
+gen-abs1 200 500 10 0
+gen-abs1 200 500 100 0
+gen-abs1 300 300 100 0
+gen-abs1 300 300 50 0
+gen-abs1 300 300 10 1
+gen-abs1 300 300 1 1
+gen-abs1 300 300 10 0
+gen-abs1 300 300 5000 0
+gen-abs1 300 300 5000 0
+
+@subtask n4
+@include sample-nm
+gen 1 1 10
+gen 1 2000 10
+gen 1 2000 5
+gen 2000 1 10
+gen 2000 1 5
+gen 10 198 10
+gen 10 158 5
+gen 158 11 10
+gen 166 12 5
+gen 40 50 10
+gen 40 50 3
+gen 50 40 10
+gen 50 40 3
+
+@subtask small-n
+@include sample-nm
+gen 1 1 5
+gen 1 100000 10
+gen 1 90315 5
+gen 2 46512 10
+gen 2 48952 10
+gen 3 33333 10
+gen 3 32665 8
+gen 4 25000 10
+gen 4 20087 8
+gen 5 19857 8
+gen 6 16552 8
+gen 7 12200 8
+gen 8 12498 8
+
+@subtask n3
+@include samples
+@include n4
+@include small-n
+@include check
+gen 1 1 10
+gen 2 2 10
+gen 1 100000 10
+gen 100000 1 10
+gen 10000 10 10
+gen 10000 10 8
+gen 10 10000 10
+gen 10 10000 8
+gen 2500 40 10
+gen 2500 40 8
+gen 40 2500 10
+gen 40 2500 8
+gen 500 200 10
+gen 500 200 8
+gen 500 200 4
+gen 500 200 6
+gen 200 500 0
+gen 200 500 8
+gen 200 500 7
+gen 200 500 0
+gen 300 300 10
+gen 300 300 8
+gen 300 300 7
+gen 300 300 6
+gen 300 300 5
+gen 300 300 4
+gen 300 300 3

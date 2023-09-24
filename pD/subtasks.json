@@ -9,9 +9,27 @@
             "text": "範例輸入輸出",
             "validators": []
         },
-        "full": {
+        "check": {
             "index": 1,
-            "score": 100,
+            "score": 26,
+            "text": "$a_{i, j} \\in \\{-1, 1\\}$，至少有一個 $a_{i, j} = 1$",
+            "validators": []
+        },
+        "n4": {
+            "index": 2,
+            "score": 23,
+            "text": "$N \\times M \\leq 2000$",
+            "validators": []
+        },
+        "small-n": {
+            "index": 3,
+            "score": 14,
+            "text": "$N \\leq 8$",
+            "validators": []
+        },
+        "n3": {
+            "index": 4,
+            "score": 27,
             "text": "無額外限制",
             "validators": []
         }

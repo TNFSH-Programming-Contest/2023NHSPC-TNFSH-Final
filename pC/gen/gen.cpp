@@ -4,11 +4,9 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
 	registerGen(argc, argv, 1);
-	// about testlib, see https://codeforces.com/blog/entry/18291
 
-	// TODO
-	int n = atoi(argv[1]);
-	cout << n << endl;
+	int A = atoi(argv[1]), B = atoi(argv[2]);
+	cout << rnd.next(A, B) << endl;
 
 	return 0;
 }

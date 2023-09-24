@@ -9,9 +9,21 @@
             "text": "範例輸入輸出",
             "validators": []
         },
-        "full": {
+        "small": {
             "index": 1,
-            "score": 100,
+            "score": 7,
+            "text": "$N \\leq 10$",
+            "validators": []
+        },
+        "linear": {
+            "index": 2,
+            "score": 18,
+            "text": "$N \\leq 2 \\times 10^5$",
+            "validators": []
+        },
+        "full": {
+            "index": 3,
+            "score": 75,
             "text": "無額外限制",
             "validators": []
         }

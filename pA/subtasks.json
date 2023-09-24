@@ -9,9 +9,27 @@
             "text": "範例輸入輸出",
             "validators": []
         },
-        "full": {
+        "k1": {
             "index": 1,
-            "score": 100,
+            "score": 17,
+            "text": "$k = 1$",
+            "validators": []
+        },
+        "brute": {
+            "index": 2,
+            "score": 23,
+            "text": "$N \\leq 20$",
+            "validators": []
+        },
+        "int": {
+            "index": 3,
+            "score": 43,
+            "text": "$N \\leq 160$",
+            "validators": []
+        },
+        "full": {
+            "index": 4,
+            "score": 17,
             "text": "無額外限制",
             "validators": []
         }

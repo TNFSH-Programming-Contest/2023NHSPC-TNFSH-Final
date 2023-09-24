@@ -9,9 +9,15 @@
             "text": "範例輸入輸出",
             "validators": []
         },
-        "full": {
+        "short": {
             "index": 1,
-            "score": 100,
+            "score": 35,
+            "text": "$|s| = |t| = 1$",
+            "validators": []
+        },
+        "full": {
+            "index": 2,
+            "score": 65,
             "text": "無額外限制",
             "validators": []
         }

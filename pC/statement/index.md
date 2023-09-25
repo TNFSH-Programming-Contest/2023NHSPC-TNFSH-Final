@@ -1,10 +1,8 @@
 # 老舊鍵盤 (keyboard)
 
-**請注意本題記憶體限制。**
+方塊的鍵盤壞掉了！現在他的鍵盤只能鍵入數字 $1$，為了登入電腦，他必須要輸入一個**正整數**被 $N$ 整除。對於給定的 $N$，求出方塊最少需要按幾次 $1$ 才能登入電腦，或者說在給定 $N$ 的條件下，根本不可能成功。
 
-小方塊的鍵盤壞掉了！現在他的鍵盤只能鍵入數字 $1$，為了登入電腦，他必須要輸入一個**正整數**被 $N$ 整除。對於給定的 $N$，求出方塊最少需要按幾次 $1$ 才能登入電腦，或者說在給定 $N$ 的條件下，根本不可能成功。
-
-換句話說，你需要找到最小的**正**整數 $M$ 使得 $N$ 整除 $\overset{M}{\overbrace{11\cdots1}}$（即 $M$ 個連續的 $1$）。
+換句話說，你需要找到最小的**正整數** $M$ 使得 $N$ 整除 $\overset{M}{\overbrace{11\cdots1}}$（即 $M$ 個連續的 $1$）。
 
 ## 輸入
 第一行有一個正整數 $N$。
@@ -21,22 +19,28 @@
 \clearpage
 
 ## 範例輸入 1
-\testfile{0-01.in}
+\testfile{small-sample-01.in}
 
 ## 範例輸出 1
-\testfile{0-01.out}
+\testfile{small-sample-01.out}
 
 ## 範例輸入 2
-\testfile{0-02.in}
+\testfile{small-sample-02.in}
 
 ## 範例輸出 2
-\testfile{0-02.out}
+\testfile{small-sample-02.out}
 
 ## 範例輸入 3
-\testfile{0-03.in}
+\testfile{0-01.in}
 
 ## 範例輸出 3
-\testfile{0-03.out}
+\testfile{0-01.out}
+
+## 範例輸入 4
+\testfile{0-02.in}
+
+## 範例輸出 4
+\testfile{0-02.out}
 
 ## 範例說明
 

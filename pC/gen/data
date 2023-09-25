@@ -1,10 +1,15 @@
-@subtask samples
-gen	1 1
+@testset small-sample
 gen	6 6
 gen 7 7
 
+@subtask samples
+@include small-sample
+gen 173867 173867
+gen 918608311 918608311
+
 @subtask small
-@include samples
+@include small-sample
+gen	1 1
 gen	2 2
 gen	3 3
 gen	4 4
@@ -33,29 +38,25 @@ gen	1 200000 h
 
 @subtask full
 @include linear
+@include samples
 gen	1 1000000 a
-gen	1 1000000 b
-gen	1 1000000 c
+gen-better	1 1000000 b
 gen	1 10000000 a
-gen	1 10000000 b
-gen	1 10000000 c
-gen	1 10000000 d
+gen-better	1 10000000 c
 gen	1 100000000 a
-gen	1 100000000 b
-gen	1 100000000 c
-gen	1 100000000 d
+gen-better	1 100000000 c
 gen	1 1000000000 q
 gen	1 1000000000 w
 gen	1 1000000000 v
-gen	1 1000000000 e
-gen	1 1000000000 r
-gen	1 1000000000 t
-gen	1 1000000000 y
-gen	1 1000000000 u
-gen	1 1000000000 i
-gen	1 1000000000 o
-gen	1 1000000000 p
-gen	1 1000000000 z
-gen	1 1000000000 a
-gen	1 1000000000 s
-gen	1 1000000000 d
+gen-better	1 1000000000 e
+gen-better	1 1000000000 rr
+gen-better	1 1000000000 tt
+gen-better	1 1000000000 yy
+gen-better	1 1000000000 u
+gen-better	1 1000000000 i
+gen-better	1 1000000000 oo
+gen-better	1 1000000000 pp
+gen-better	1 1000000000 z
+gen-better	1 1000000000 aa
+gen-better	1 1000000000 ss
+gen-better	1 1000000000 dd

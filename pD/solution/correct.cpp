@@ -3,7 +3,7 @@
 using namespace std;
 
 vector<vector<ll>> a;
-ll dp[400][400];
+ll dp[2][400][400];
 
 int main()
 {
@@ -18,25 +18,31 @@ int main()
 				cin >> a[i][j];
 	if (n < m)
 		swap(n, m);
-	for (int i = 1; i <= n; i++)
-		for (int j = 1; j <= m; j++)
-			a[i][j] += a[i][j - 1];
 
 	for (int j = 0; j <= m; j++)
 		for (int k = 0; k <= m; k++)
-			if (k < j)
-				dp[j][k] = -1e18;
+			dp[0][j][k] = -1e18;
+	dp[0][1][1] = 0;
 	for (int i = 1; i <= n; i++)
 	{
-		for (int j = 1; j <= m; j++)
+		int t = i & 1;
+		for (int j = 2; j <= m; j++)
 			for (int k = j; k <= m; k++)
-				dp[j][k] = max({dp[j][k], dp[j - 1][k], dp[j][k - 1]});
+				dp[t ^ 1][j][k] = max(dp[t ^ 1][j][k], dp[t ^ 1][j - 1][k]);
 		for (int j = 1; j <= m; j++)
+		{
+			// avaliable: l in [1, j] and r in [j, k]
+			ll pref = -1e18, sum = 0;
 			for (int k = j; k <= m; k++)
-				dp[j][k] += a[i][k] - a[i][j - 1];
+			{
+				pref = max(pref, dp[t ^ 1][j][k]);
+				sum += a[i][k];
+				dp[t][j][k] = pref + sum;
+			}
+		}
 	}
+	ll ans = -1e18;
 	for (int j = 1; j <= m; j++)
-		for (int k = j; k <= m; k++)
-			dp[j][k] = max({dp[j][k], dp[j - 1][k], dp[j][k - 1]});
-	cout << dp[m][m] << '\n';
+		ans = max(ans, dp[n & 1][j][m]);
+	cout << ans << '\n';
 }

@@ -17,6 +17,7 @@
 ## 輸入限制
  - $1 \leq T \leq 5 \times 10^4$
  - $1 \leq |s|, |t| \leq 10$
+ - $s, t$  只由 `b`、`d`、`p`、`q` 組成。
 
 ## 子任務
 \subtasks

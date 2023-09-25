@@ -1,6 +1,6 @@
 # test_name gen_line_number gen_line_content
-0-01	  2	gen-random 5 9 1
-0-02	  3	gen-random 6 10 2 1 a
+0-01	  2	manual example-01.in
+0-02	  3	manual example-02.in
 0-03	  4	gen-random 3 3 2
 small-k1-01	  7	gen-random  1 0 1
 small-k1-02	  8	gen-random  4 6 1

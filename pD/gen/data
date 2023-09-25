@@ -11,7 +11,18 @@ manual example-2.in
 @subtask check
 @include sample-check
 gen-abs1 1 1 1 0
-gen-abs1 2 2 1 0
+gen-rows 2 2 1
+gen-rows 5 19856 1
+gen-rows 19856 5 1
+gen-antiwrong 30 300 a
+gen-antiwrong 30 300 b
+gen-antizero 300 300 1 a
+gen-antizero 300 300 1 b
+gen-rows 300 300 1 a
+gen-rows 300 300 1 b
+gen-rows 300 300 0 a
+gen-rows 300 300 0 b
+gen-rows 300 300 0 c
 gen-abs1 1 100000 1 0
 gen-abs1 100000 1 1 0
 gen-abs1 10000 10 5 0
@@ -23,23 +34,32 @@ gen-abs1 2500 40 5 1
 gen-abs1 40 2500 5 0
 gen-abs1 40 2500 5 1
 gen-abs1 500 200 2 1
-gen-abs1 500 200 4 0
-gen-abs1 500 200 10 0
 gen-abs1 500 200 100 0
 gen-abs1 200 500 2 1
 gen-abs1 200 500 4 0
 gen-abs1 200 500 10 0
 gen-abs1 200 500 100 0
 gen-abs1 300 300 100 0
-gen-abs1 300 300 50 0
 gen-abs1 300 300 10 1
-gen-abs1 300 300 1 1
 gen-abs1 300 300 10 0
-gen-abs1 300 300 5000 0
+gen-abs1 300 300 5000 1
 gen-abs1 300 300 5000 0
 
-@subtask n4
+@subtask n5
 @include sample-nm
+gen 1 1 10
+gen 2 2 10
+gen 1 50 10
+gen 50 1 10
+gen 2 25 8
+gen 25 2 8
+gen 4 12 8
+gen 12 4 8
+gen 7 7 10
+gen 7 7 8
+
+@subtask n4
+@include n5
 gen 1 1 10
 gen 1 2000 10
 gen 1 2000 5
@@ -54,8 +74,10 @@ gen 40 50 3
 gen 50 40 10
 gen 50 40 3
 
-@subtask small-n
-@include sample-nm
+@subtask full
+@include samples
+@include n4
+@include check
 gen 1 1 5
 gen 1 100000 10
 gen 1 90315 5
@@ -69,16 +91,12 @@ gen 5 19857 8
 gen 6 16552 8
 gen 7 12200 8
 gen 8 12498 8
-
-@subtask n3
-@include samples
-@include n4
-@include small-n
-@include check
 gen 1 1 10
 gen 2 2 10
 gen 1 100000 10
 gen 100000 1 10
+gen 3 33267 10
+gen 33267 3 10
 gen 10000 10 10
 gen 10000 10 8
 gen 10 10000 10

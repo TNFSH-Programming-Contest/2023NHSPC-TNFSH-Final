@@ -1,6 +1,6 @@
 @subtask samples
-gen-random 5 9 1
-gen-random 6 10 2 1 a
+manual example-01.in
+manual example-02.in
 gen-random 3 3 2
 
 @testset small-k1

@@ -13,7 +13,7 @@
 | title |  [:white_check_mark:](pA/problem.json)<br>網路連線 | [:x:](pB/problem.json) | [:white_check_mark:](pC/problem.json)<br>老舊鍵盤 | [:white_check_mark:](pD/problem.json)<br>森林道路 | [:white_check_mark:](pE/problem.json)<br>宗教戰爭 |
 | memory_limit |  256 | 512 | 64 | 256 | 256 |
 | time_limit |  1.0 | 1.0 | 0.5 | 1.0 | 1.0 |
-| has_checker |  False | False | False | False | False |
+| has_checker |  False | False | False | True | False |
 | gen | [:x:](pA/gen)<br>[jngen.h](pA/gen/jngen.h) | [:x:](pB/gen)<br>[data](pB/gen/data)<br>[gen.cpp](pB/gen/gen.cpp) | [:white_check_mark:](pC/gen) | [:white_check_mark:](pD/gen) | [:white_check_mark:](pE/gen) |
 | solution | [:white_check_mark:](pA/solution) | [:x:](pB/solution)<br>[correct.cpp](pB/solution/correct.cpp) | [:white_check_mark:](pC/solution) | [:white_check_mark:](pD/solution) | [:white_check_mark:](pE/solution) |
 | validator | [:white_check_mark:](pA/validator) | [:x:](pB/validator)<br>[validator.cpp](pB/validator/validator.cpp) | [:white_check_mark:](pC/validator) | [:white_check_mark:](pD/validator) | [:white_check_mark:](pE/validator) |

@@ -2,12 +2,12 @@
 ## Progress
 <!-- progress start -->
 
-- cover.tex [:x:](cover.tex)
+- cover.tex [:white_check_mark:](cover.tex)
 - appendix.tex [:x:](appendix.tex)
 
 | | A | B | C | D | E |
 | --- | --- | --- | --- | --- | --- |
-| contest_name |  [:x:](pA/problem.json) | [:x:](pB/problem.json) | [:x:](pC/problem.json) | [:x:](pD/problem.json) | [:x:](pE/problem.json) |
+| contest_name |  [:white_check_mark:](pA/problem.json) | [:white_check_mark:](pB/problem.json) | [:white_check_mark:](pC/problem.json) | [:white_check_mark:](pD/problem.json) | [:white_check_mark:](pE/problem.json) |
 | problem_label |  [:white_check_mark:](pA/problem.json) | [:white_check_mark:](pB/problem.json) | [:white_check_mark:](pC/problem.json) | [:white_check_mark:](pD/problem.json) | [:white_check_mark:](pE/problem.json) |
 | name |  [:white_check_mark:](pA/problem.json)<br>connection | [:x:](pB/problem.json) | [:white_check_mark:](pC/problem.json)<br>keyboard | [:white_check_mark:](pD/problem.json)<br>pathway | [:white_check_mark:](pE/problem.json)<br>religion |
 | title |  [:white_check_mark:](pA/problem.json)<br>網路連線 | [:x:](pB/problem.json) | [:white_check_mark:](pC/problem.json)<br>老舊鍵盤 | [:white_check_mark:](pD/problem.json)<br>森林道路 | [:white_check_mark:](pE/problem.json)<br>宗教戰爭 |

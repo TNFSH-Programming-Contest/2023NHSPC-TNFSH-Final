@@ -25,7 +25,7 @@ AGC 總共建置了 $N$ 台伺服器，編號為 $1$ 至 $N$，在這 $N$ 台伺
 
 ## 輸入限制
  - $1 \leq N \leq 80000$
- - $0 \leq M \leq \min\left(\frac{N(N-1)}{2}, 2 \times 10^6\right)$
+ - $0 \leq M \leq \min\left(\frac{N(N-1)}{2}, 10^6\right)$
  - $1 \leq k \leq 2$
  - $1 \leq u_i < v_i \leq N$
  - $(u_i, v_i) \neq (u_j, v_j) \quad (i \neq j)$

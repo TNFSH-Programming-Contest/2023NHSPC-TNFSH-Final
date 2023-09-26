@@ -21,23 +21,23 @@ gen-random  15 80 1
 
 @subtask k1
 @include small-k1
-gen-random  80000 2000000 1 a
-gen-random  80000 2000000 1 b
+gen-random  80000 1000000 1 a
+gen-random  80000 1000000 1 b
 gen-random  80000 200000 1 a
 gen-random  80000 200000 1 b
 gen-random  80000 79999 1 a
 gen-random  80000 30000 1 b
-gen-many    80000 2000000 1 1 a
-gen-many    80000 2000000 1 1 b
-gen-many    80000 2000000 2 1
-gen-many    80000 2000000 3 1
+gen-many    80000 1000000 1 1 a
+gen-many    80000 1000000 1 1 b
+gen-many    80000 1000000 2 1
+gen-many    80000 1000000 3 1
 gen-many    80000 79999 1 1
 gen-many    80000 279998 2 1
 gen-many    80000 279997 3 1
 gen-random  100 2000 1
 gen-random  150 2000 1
-gen-random  2000 1999000 1
-gen-random  2000 1998556 1
+gen-random  2000 999000 1
+gen-random  2000 998556 1
 gen-random  80000 556 1
 
 @subtask brute
@@ -85,23 +85,23 @@ gen-many    123 4000 2 2
 @subtask full
 @include int
 @include k1
-gen-random  80000 2000000 2 a
-gen-random  80000 2000000 2 b
+gen-random  80000 1000000 2 a
+gen-random  80000 1000000 2 b
 gen-random  80000 200000 2
 gen-random  80000 200000 2
 gen-random  80000 79999 2
 gen-random  80000 30000 2
-gen-many    80000 2000000 1 2 a
-gen-many    80000 2000000 1 2 b
-gen-many    80000 2000000 2 2 a
-gen-many    80000 2000000 2 2 b
-gen-many    80000 2000000 3 2 a
-gen-many    80000 2000000 3 2 b
+gen-many    80000 1000000 1 2 a
+gen-many    80000 1000000 1 2 b
+gen-many    80000 1000000 2 2 a
+gen-many    80000 1000000 2 2 b
+gen-many    80000 1000000 3 2 a
+gen-many    80000 1000000 3 2 b
 gen-many    80000 79999 1 2
 gen-many    80000 279998 2 2
 gen-many    80000 279997 3 2
 gen-random  100 2000 2
 gen-random  150 2000 2
-gen-random  2000 1999000 2
-gen-random  2000 1998556 2
+gen-random  2000 999000 2
+gen-random  2000 998556 2
 gen-random  80000 556 2

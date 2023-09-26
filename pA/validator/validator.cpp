@@ -1,7 +1,7 @@
 #include "testlib.h"
 using namespace std;
 
-const int maxN = 80'000, maxM = 2'000'000;
+const int maxN = 80'000, maxM = 1'000'000;
 
 int main(int argc, char* argv[]) {
 	registerValidation(argc, argv);

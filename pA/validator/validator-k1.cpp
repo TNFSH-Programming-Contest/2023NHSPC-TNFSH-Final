@@ -1,7 +1,7 @@
 #include "testlib.h"
 using namespace std;
 
-const int maxN = 80'000, maxM = 2'000'000;
+const int maxN = 80'000, maxM = 1'000'000;
 
 int main(int argc, char* argv[]) {
 	registerValidation(argc, argv);
@@ -21,8 +21,6 @@ int main(int argc, char* argv[]) {
 		int v = inf.readInt(1, n, "v");
 		inf.readEoln();
 		ensuref(u < v, "edge condition");
-		ensuref(mp[{u, v}] == 0, "edge condition");
-		mp[{u, v}] = 1;
 	}
 	inf.readEof();
 

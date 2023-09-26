@@ -17,13 +17,13 @@
         },
         "linear": {
             "index": 2,
-            "score": 18,
+            "score": 28,
             "text": "$N \\leq 2 \\times 10^5$",
             "validators": []
         },
         "full": {
             "index": 3,
-            "score": 75,
+            "score": 65,
             "text": "無額外限制",
             "validators": []
         }

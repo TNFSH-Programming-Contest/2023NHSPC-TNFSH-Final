@@ -1,0 +1,5 @@
+\beamer@sectionintoc {2}{E. 宗教戰爭 (religion)}{5}{0}{1}
+\beamer@sectionintoc {3}{A. 網路連線 (connection)}{11}{0}{2}
+\beamer@sectionintoc {4}{B.}{19}{0}{3}
+\beamer@sectionintoc {5}{D. 森林道路 (pathway)}{21}{0}{4}
+\beamer@sectionintoc {6}{C. 老舊鍵盤 (keyboard)}{32}{0}{5}

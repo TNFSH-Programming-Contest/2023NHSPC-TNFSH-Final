@@ -1,12 +1,6 @@
 # 2023NHSPC-TNFSH-Final
 112學年度資訊學科能力競賽臺南一中校內複選
 
-- connection
-- farm
-- one
-- pathway
-- region
-
 | problem | statement | gen | validator | solution | tests | config |
 | --- | --- | --- | --- | --- | --- | --- |
 | A | [statement](pA/statement) [md](pA/statement/index.md) [pdf](pA/statement/index.pdf) | [gen](pA/gen) | [validator](pA/validator) | [solution](pA/solution) [check](pA/solutions-check.txt) | [tests](pA/tests) | [problem](pA/problem.json) [solutions](pA/solutions.json) [subtasks](pA/subtasks.json) |
@@ -15,8 +9,3 @@
 | D | [statement](pD/statement) [md](pD/statement/index.md) [pdf](pD/statement/index.pdf) | [gen](pD/gen) | [validator](pD/validator) | [solution](pD/solution) [check](pD/solutions-check.txt) | [tests](pD/tests) | [problem](pD/problem.json) [solutions](pD/solutions.json) [subtasks](pD/subtasks.json) |
 | E | [statement](pE/statement) [md](pE/statement/index.md) [pdf](pE/statement/index.pdf) | [gen](pE/gen) | [validator](pE/validator) | [solution](pE/solution) [check](pE/solutions-check.txt) | [tests](pE/tests) | [problem](pE/problem.json) [solutions](pE/solutions.json) [subtasks](pE/subtasks.json) |
 
-<!-- new problem -->
-
-## Subtasks
-<!-- subtasks start -->
-<!-- subtasks end -->

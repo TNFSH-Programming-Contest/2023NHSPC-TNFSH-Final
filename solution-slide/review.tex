@@ -1,0 +1,454 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[hyperref,UTF8,notheorems,xcolor={dvipsnames}]{beamer}
+\usepackage[dvipsnames]{xcolor}
+\usetheme{Rochester}
+\usepackage{amsmath, mathtools, graphicx}
+\usepackage{standalone}
+\usepackage[most]{tcolorbox}
+\usepackage[normalem]{ulem}
+\usepackage{xeCJK}
+\usepackage{fontspec}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pifont}
+\usepackage{fontawesome5}
+\usepgfplotslibrary{polar}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc,angles,quotes}
+\defaultfontfeatures{Mapping=tex-text}
+\usefonttheme{professionalfonts}
+\usepackage{concmath}
+\usepackage{minted}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+%\newcommand{\CC}[1]{\textsf{\small #1}}% to quote from Computing Curricula 2001
+\newcommand{\CC}[1]{#1}
+
+\newcommand{\Cincluded}{{\small\cmark}}
+\newcommand{\Cdefine}{{\small\cmark\faFile*[regular]}}
+\newcommand{\Ccodeonly}{{\small\cmark\faFile*~}}
+\newcommand{\Cnofocus}{{\small\faQuestion}}
+\newcommand{\Cexmaybe}{{\small\xmark\faQuestionCircle}}
+\newcommand{\Cexcluded}{{\small\xmark}}
+
+\newcommand{\Iincluded}{\item[\hbox to 1.8em{\Cincluded\hfill}]}
+\newcommand{\Idefine}{\item[\hbox to 1.8em{\Cdefine\hfill}]}
+\newcommand{\Icodeonly}{\item[\hbox to 1.8em{\Ccodeonly\hfill}]}
+\newcommand{\Inofocus}{\item[\hbox to 1.8em{\Cnofocus\hfill}]}
+\newcommand{\Iexmaybe}{\item[\hbox to 1.8em{\Cexmaybe\hfill}]}
+\newcommand{\Iexcluded}{\item[\hbox to 1.8em{\Cexcluded\hfill}]}
+
+\DeclareRobustCommand{\rddots}{\text{\reflectbox{$\ddots$}}}
+
+
+\usepackage{graphicx}
+\graphicspath{ {./../images/} }
+
+\def\codesize{\fontsize{8}{9}\selectfont}
+\setmonofont[Mapping=]{Source Code Pro}
+\setminted{fontsize=\codesize, linenos, frame=lines, mathescape, autogobble, tabsize=4}
+\setCJKmainfont[AutoFakeSlant,BoldFont=Noto Sans CJK TC Bold]{Noto Sans CJK TC}
+
+\setlength{\parskip}{\baselineskip} 
+\newcommand{\btitle}[1]{{\secname} -- #1}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{引理}
+\newtheorem{property}{性質}
+\newtheorem{corollary}{推論}
+\newtheorem{problem}{例題}
+
+
+\newtheorem{definition}{定義}
+\AtBeginEnvironment{definition}{
+  \setbeamercolor{block title}{fg=white,bg=red!70!black}
+  \setbeamercolor{block body}{fg=black, bg=block title.bg!10!bg}
+}
+
+\newtheorem{exercise}{習題}
+\AtBeginEnvironment{exercise}{
+  \setbeamercolor{block title}{fg=white,bg=green!30!black}
+  \setbeamercolor{block body}{fg=black, bg=block title.bg!10!bg}
+}
+
+
+\AtBeginSection[]{
+  \begin{frame}
+    \tableofcontents[currentsection,hideallsubsections]
+  \end{frame}
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=6pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\LARGE\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+
+\AtBeginSubsection[]{
+  \begin{frame}
+    \tableofcontents[subsectionstyle=show/shaded/hide]
+  \end{frame}
+}
+
+\usepackage{ctable}
+\usepackage{tabularx}
+
+\setlength{\parskip}{\baselineskip}
+
+
+\title{112 臺南一中學科能力競賽校內複選}
+
+\hypersetup{CJKbookmarks=true}
+\begin{document}
+
+\author{題解}
+\date{Sep 28 2023}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section*{Overview}
+
+\begin{frame}[fragile]{\btitle{預期解出人數}}
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis} [%
+				ybar,
+				bar width=15pt,
+				xmin=0.5,
+				xmax=5.5,
+				ymin=0,
+				xtick={1,2,3,4,5},
+				xticklabels={A,B,C,D,E}]
+			\addplot plot coordinates {
+				(1,5) 
+				(2,3) 
+				(3,0) 
+				(4,1)
+				(5,10)
+			};
+			\addplot [color=white] plot coordinates {
+				(1,1) 
+				(2,1) 
+				(3,1) 
+				(4,1)
+				(5,1)
+			};
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{實際解出人數}}
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis} [%
+				ybar,
+				bar width=15pt,
+				xmin=0.5,
+				xmax=5.5,
+				ymin=0,
+				xtick={1,2,3,4,5},
+				xticklabels={A,B,C,D,E}]
+			\addplot plot coordinates {
+				(1,5) 
+				(2,3) 
+				(3,0) 
+				(4,1)
+				(5,10)
+			};
+			\addplot [color=white] plot coordinates {
+				(1,1) 
+				(2,1) 
+				(3,1) 
+				(4,1)
+				(5,1)
+			};
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{\secname}
+	\begin{enumerate}
+		\item A 圖論 + 一些 case
+		\item B 資料結構
+		\item C 數學
+		\item D DP
+		\item E 簽到題
+	\end{enumerate}
+\end{frame}
+
+\section{E. 宗教戰爭 (religion)}
+
+\begin{frame}[fragile]{\btitle{題目敘述}}
+	給定由 \texttt{b, p, d, q} 組成的字串，問是否能夠在數次旋轉或翻轉之後一樣。  
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務}}
+	\begin{enumerate}
+		\item 字串長度為 1
+		\item 無額外限制
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 1 --- 字串長度為 1}}
+	無論如何都是 \texttt{Yes}。
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 2 --- 無額外限制}}
+	旋轉：\texttt{b} 與 \texttt{q} 互換、\texttt{d} 與 \texttt{p} 互換並反轉順序
+
+	上下翻轉：\texttt{b} 與 \texttt{p} 互換、\texttt{d} 與 \texttt{q} 互換
+	
+	左右翻轉：旋轉與上下翻轉。  
+
+	只有四種可能，全部暴力檢查。  
+\end{frame}
+
+\section{A. 網路連線 (connection)}
+
+\begin{frame}[fragile]{\btitle{題目敘述}}
+	給定一張簡單圖，問有多少加 $k$ 條邊的組合滿足
+
+	\begin{itemize}
+		\item 圖連通
+		\item 圖仍為簡單
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務}}
+	\begin{enumerate}
+		\item $k = 1$
+		\item $N \leq 20$
+		\item $N \leq 160$
+		\item 無額外限制
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 1 --- $k = 1$}}
+	假設圖的連通塊只有 $1$ 個，答案是 $\frac{N(N-1)}{2} - M$。\\
+	小心 $\frac{N(N-1)}{2} \approx 3.2 \times 10^9$，注意 overflow。
+	
+	假設圖的連通塊有 $2$ 個，大小分別為 $c_1, c_2$，答案是 $c_1 \times c_2$。
+
+	假設圖的連通塊有 $3$ 個以上，不可能滿足，答案為 $0$。
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 2 --- $N \leq 20$}}
+	枚舉所有邊的組合：$O(N^4)$
+
+	求連通狀態：DFS $O(N)$
+
+	總時間複雜度 $O(N^5)$。  
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 3 --- $N \leq 160$}}
+	假設圖的連通塊只有 $1$ 個，答案是 $\frac{1}{2}\left(\frac{N(N-1)}{2} - M\right)\left(\frac{N(N-1)}{2} - M - 1\right)$。
+	
+
+	假設圖的連通塊有 $2$ 個，大小分別為 $c_1, c_2$，\\
+	考慮有兩條連接兩個連通塊的邊，是 $\frac{1}{2}(c_1 \times c_2)(c_1 \times c_2 - 1)$。\\
+	有一個連通兩個連通塊的邊，另一個不是：$c_1\times c_2 \times (M - \frac{1}{2}c_1(c_1-1) - \frac{1}{2}c_2(c_2-1))$。  
+
+
+	假設圖的連通塊有 $3$ 個，大小分別為 $c_1, c_2, c_3$，答案為 $(c_1 + c_2 + c_3)c_1c_2c_3$。  
+	
+
+	假設圖的連通塊有 $3$ 個以上，不可能滿足，答案為 $0$。 
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 4 --- 無額外限制}}
+	$\frac{1}{2}\left(\frac{N(N-1)}{2} - M\right)\left(\frac{N(N-1)}{2} - M - 1\right) \approx 5 \times 10^{18}$  
+
+	善用 \texttt{(unsigned) long long}！
+\end{frame}
+
+\section{B.}
+
+\section{D. 森林道路 (pathway)}
+
+\begin{frame}[fragile]{\btitle{題目敘述}}
+	給定一個 $N \times M$ 的網格，求出最大權的道路。  
+
+	道路的條件是：
+	\begin{itemize}
+		\item $(1, 1), (N, M)$ 要在道路上
+		\item 對於任意兩個左上 -- 右下分布的兩個格子，道路要包含他們的最短路。
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務}}
+	\begin{enumerate}
+		\item 只需要驗證輸入是不是合法的道路
+		\item $NM \leq 50$
+		\item $NM \leq 2000$
+		\item $NM \leq 10^5$
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 1 --- 驗證}}
+	
+	首先 $(1, 1)$ 至 $(N, M)$ 連通。  
+
+	\onslide<2->
+	{
+		對於同一列的兩個格子，中間的格子都必須存在。\\  
+		對於同一行的兩個格子，中間的格子都必須存在。  
+	}
+
+	\onslide<3->
+	{
+		假設相鄰兩列的格子是 $(i, L_i)$ 至 $(i, R_i)$ 以及 $(i+1, L_{i+1})$ 至 $(i+1, R_{i+1})$，則  
+
+		$L_i \leq L_{i+1}$，否則 $(1, 1)$ 至 $(i+1, L_{i+1})$ 沒有最短路被包含。\\
+		$R_i \leq R_{i+1}$，否則 $(i, R_i)$ 至 $(N, M)$ 沒有最短路被包含。\\
+		$R_i \leq L_{i+1}$，否則不連通。
+	}
+
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 1 --- 驗證}}
+	
+	這樣的條件就合法嗎？  
+
+	容易驗證最短路的條件一定滿足。  
+
+	複雜度 $O(NM)$。  
+
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 2 --- $NM \leq 50$}}
+	
+	定義 $dp_{i, l, r}$ 表示考慮到第 $i$ 列取了 $[l, r]$ 的所有格子，最大的權重可能。  
+
+	初始值 $dp_{0, 1, 1} = 0$ 而剩餘的狀態都是 $- \infty$。  
+
+	轉移直接按照剛剛的條件並枚舉，最後答案是 $\max_{l} dp_{n,l,m}$。  
+
+	總時間複雜度 $O(NM^2 \times M^2)$。  
+
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 3 --- $NM \leq 2000$}}
+	
+	$dp_{i, l, r}$ 的轉移來源：
+	
+	\[ \max_{\substack{1 \leq l' \leq l \\ l \leq r' \leq r}} dp_{i-1, l', r'} + \sum_{j=l}^{r}a_{i,j} \]
+	
+	當 $i, l$ 固定的時候，能夠轉移的上一個狀態左界 $1 \leq l' \leq l$ 是固定的，右界依序遞增。\\
+	因此我們只需要對 $l'$ 預處理前綴最大值，轉移的時候逐漸加入 $r$ 即可只花 $O(1)$ 轉移。
+
+	總時間複雜度 $O(NM^2)$。  
+
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 4 --- $NM \leq 10^5$}}
+	
+	\[ \min(N, M) \leq \sqrt{NM} \]
+
+	假如 $M > N$ 將網格轉置，可以發現條件是相同的，所以直接做一樣的 DP。  
+
+	總時間複雜度 $O(\min(NM^2, N^2M)) = O(NM\min(N, M)) = O(NM\sqrt{NM})$。  
+
+\end{frame}
+
+\section{C. 老舊鍵盤 (keyboard)}
+
+\begin{frame}[fragile]{\btitle{題目敘述}}
+
+	找到最小的\textbf{正整數} $M$ 使得 $N$ 整除 $\overset{M}{\overbrace{11\cdots1}}$。
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務}}
+	\begin{enumerate}
+		\item $N \leq 10$
+		\item $N \leq 2 \times 10^5$
+		\item $N \leq 10^9$
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 1 --- $N \leq 10$}}
+	
+	手算，答案表：
+
+	\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
+	$N$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+	\hline
+	$M$ & 1 & -1 & 3 & -1 & -1 & -1 & 6 & -1 & 9 & -1
+	\end{tabular}
+
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 2 --- $N \leq 2 \times 10^5$}}
+	
+	我們沒有辦法計算太大的數字，要怎麼搜索？
+
+	\onslide<2->
+	{
+		\[ \overset{k+1}{\overbrace{11\cdots1}} = 10 \cdot \overset{k}{\overbrace{11\cdots1}} + 1 \]
+
+		定義 $f(x) \equiv 10 x + 1 \mod N$，我們想知道 $0$ 套幾次 $0$ 會變回 $0$。  
+
+		搜索到 $N$ 以下就能找到答案（或者無解）了，為什麼？  
+	}
+
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 3 --- $N \leq 10^9$}}
+	
+	\begin{lemma}[無解條件]
+		如果 $N$ 是 $2$ 或 $5$ 的倍數則無解。  
+	\end{lemma}
+
+	考慮尾數一直都是 $1$，所以這件事情顯然會無解。  
+
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 3 --- $N \leq 10^9$}}
+	
+	考慮由 $0, 1, \ldots, N - 1$，當這些數字 $x \rightarrow x + 1$ 的時候，不難發現是一對一對應，也就是說他是一個排列。  
+
+	考慮由 $0, 1, \ldots, N - 1$，當這些數字 $x \rightarrow 10x$ 的時候，也是一對一對應，因為：\\
+	假設 $10a \equiv 10b \mod N$，則 $N | 10(a - b)$，因為 $\mathrm{gcd}(N, 10) = 1$ 所以 $N | (a - b)$ 但不可能發生。  
+	
+	所以說，$f(x) \equiv 10 x + 1 \mod N$ 是兩個排列的合成函數，仍然是一個排列，在這些數字跟 $f$ 作為有向邊構成的圖每個數字 in, out degree 都是 1，是由一堆環組成的，因此答案一定 $\leq N$。  
+
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 3 --- $N \leq 10^9$}}
+	
+	找環長度可以由下列的作法在 $O(\sqrt N \log N)$ 內做到：  
+
+	假設 $x_0 = 0, x_i = f(x_{i-1})$，先找到 $x_0, x_1, \cdots, x_{K-1}$。  
+
+	因為 $f(x) = 10 x + 1$，所以 $\overset{K}{\overbrace{f(f(f(f(\cdots f}}(x) \cdots))))$ 也可以被寫成一個線性函數，也就是 $x_{i+K} = a x_i + b$。
+
+	這時候可以一直計算 $x_{K}, x_{2K}, x_{3K} \cdots, x_{\lceil\frac N K\rceil K}$，一定會有其中一個與 $x_0, x_1, \cdots, x_{K-1}$ 對應到，當找到就能夠計算環的長度 $= iK - j$。  
+
+	開一個 \texttt{map} 紀錄 $x_0, x_1, \cdots, x_{K-1}$，所以總時間複雜度是 $O((K + \frac N K)\log N)$，取 $K = O(\sqrt N)$ 有 $O(\sqrt N \log N)$。   
+
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 3 --- $N \leq 10^9$}}
+	
+	Alternative Solution: 考慮
+	\[ \overset{M}{\overbrace{11\cdots1}} \equiv 0 \mod N \Rightarrow \overset{M}{\overbrace{99\cdots9}} \equiv 0 \mod 9N \Rightarrow 10^M \equiv 1 \mod 9N \]
+
+	因為 
+	\[ 10^{\phi(9N)} \equiv 1 \mod 9N \]
+
+	所以只需要對 $9N$ 因式分解求出 $\phi(9N)$，接著對 $\phi(9N)$ 的質因數 $p$ 不斷嘗試 $\frac{\phi(9N)}{p}$ 是否是更好的解就好，使用 Pollard Rho 可以做到 $O(\sqrt[4]N)$。  
+	
+\end{frame}
+
+
+\end{document}
+

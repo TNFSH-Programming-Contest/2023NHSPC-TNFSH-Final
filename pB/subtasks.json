@@ -9,9 +9,27 @@
             "text": "範例輸入輸出",
             "validators": []
         },
-        "full": {
+        "brute": {
             "index": 1,
-            "score": 100,
+            "score": 13,
+            "text": "$n, q \\leq 5000$",
+            "validators": []
+        },
+        "small-c": {
+            "index": 2,
+            "score": 21,
+            "text": "$c_i, x_i \\leq 10$",
+            "validators": []
+        },
+        "same-modify": {
+            "index": 3,
+            "score": 24,
+            "text": "$x_i = 1$",
+            "validators": []
+        },
+        "full": {
+            "index": 4,
+            "score": 42,
             "text": "無額外限制",
             "validators": []
         }

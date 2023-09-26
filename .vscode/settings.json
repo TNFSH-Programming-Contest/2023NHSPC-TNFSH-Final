@@ -17,6 +17,7 @@
         "stdexcept": "cpp",
         "thread": "cpp",
         "type_traits": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "iostream": "cpp"
     }
 }

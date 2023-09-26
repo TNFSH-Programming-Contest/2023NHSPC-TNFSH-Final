@@ -24,7 +24,7 @@
         "n4": {
             "index": 3,
             "score": 27,
-            "text": "$N \\times M \\leq 2000$",
+            "text": "$N \\times M \\leq 5000$",
             "validators": []
         },
         "full": {

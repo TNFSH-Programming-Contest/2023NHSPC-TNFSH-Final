@@ -50,6 +50,8 @@ gen-random  5 10 2
 gen-many    20 19 1 2
 gen-many    20 50 2 2
 gen-many    20 50 3 2
+gen-many    20 50 4 2
+gen-many    20 60 4 2
 gen-random  20 80 2
 gen-random  20 96 2
 gen-random  20 123 2

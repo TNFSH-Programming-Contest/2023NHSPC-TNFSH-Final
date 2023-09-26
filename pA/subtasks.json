@@ -13,19 +13,19 @@
             "index": 1,
             "score": 17,
             "text": "$k = 1$",
-            "validators": []
+            "validators": ["validator-k1.cpp"]
         },
         "brute": {
             "index": 2,
             "score": 23,
             "text": "$N \\leq 20$",
-            "validators": []
+            "validators": ["validator-n20.cpp"]
         },
         "int": {
             "index": 3,
             "score": 43,
             "text": "$N \\leq 160$",
-            "validators": []
+            "validators": ["validator-n160.cpp"]
         },
         "full": {
             "index": 4,

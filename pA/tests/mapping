@@ -48,6 +48,8 @@ brute 2-12
 brute 2-13
 brute 2-14
 brute 2-15
+brute 2-16
+brute 2-17
 brute small-k1-01
 brute small-k1-02
 brute small-k1-03
@@ -77,6 +79,8 @@ int 2-12
 int 2-13
 int 2-14
 int 2-15
+int 2-16
+int 2-17
 int 3-01
 int 3-02
 int 3-03
@@ -142,6 +146,8 @@ full 2-12
 full 2-13
 full 2-14
 full 2-15
+full 2-16
+full 2-17
 full 3-01
 full 3-02
 full 3-03

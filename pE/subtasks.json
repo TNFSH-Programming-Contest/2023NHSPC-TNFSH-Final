@@ -13,7 +13,7 @@
             "index": 1,
             "score": 35,
             "text": "$|s| = |t| = 1$",
-            "validators": []
+            "validators": ["validator-len1.cpp"]
         },
         "full": {
             "index": 2,

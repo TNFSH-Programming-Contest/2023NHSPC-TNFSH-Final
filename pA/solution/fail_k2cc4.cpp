@@ -1,10 +1,11 @@
 #include <bits/stdc++.h>
+#define ull unsigned long long
 #define ll long long
 using namespace std;
 
-int n, m, k, vis[80004];
+ull n, m, k, vis[80004];
 vector<int> E[80004];
-vector<int> cc;
+vector<ll> cc;
 
 int dfs(int u)
 {
@@ -43,7 +44,7 @@ int main()
 	else
 	{
 		if (cc.size() > 3)
-			cout << 0 << '\n';
+			cout << -1 << '\n';
 		if (cc.size() == 3)
 			cout << cc[0] * cc[1] * cc[0] * cc[2] +
 						cc[1] * cc[0] * cc[1] * cc[2] +
@@ -51,12 +52,12 @@ int main()
 				 << '\n';
 		if (cc.size() == 2)
 		{
-			int cross = cc[0] * cc[1], inside = cc[0] * (cc[0] - 1) / 2 + cc[1] * (cc[1] - 1) / 2 - m;
+			ll cross = cc[0] * cc[1], inside = cc[0] * (cc[0] - 1) / 2 + cc[1] * (cc[1] - 1) / 2 - m;
 			cout << cross * (cross - 1) / 2 + cross * inside << '\n';
 		}
 		if (cc.size() == 1)
 		{
-			int e = n * (n - 1) / 2 - m;
+			ull e = n * (n - 1) / 2 - m;
 			cout << e * (e - 1) / 2 << '\n';
 		}
 	}

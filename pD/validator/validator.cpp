@@ -6,7 +6,7 @@ const int maxN = 100'000, maxC = 1'000'000'000;
 int main(int argc, char* argv[]) 
 {
 	registerValidation(argc, argv);
-	map<pair<int, int>, int> mp;
+	
 	int n = inf.readInt(1, maxN, "n");
 	inf.readSpace();
 	int m = inf.readInt(1, maxN, "m");

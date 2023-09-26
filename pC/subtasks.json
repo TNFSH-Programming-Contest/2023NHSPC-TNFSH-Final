@@ -13,13 +13,13 @@
             "index": 1,
             "score": 7,
             "text": "$N \\leq 10$",
-            "validators": []
+            "validators": ["validator-n10.cpp"]
         },
         "linear": {
             "index": 2,
             "score": 28,
             "text": "$N \\leq 2 \\times 10^5$",
-            "validators": []
+            "validators": ["validator-n2e5.cpp"]
         },
         "full": {
             "index": 3,

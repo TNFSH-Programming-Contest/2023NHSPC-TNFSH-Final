@@ -1,5 +1,56 @@
 {
 	"correct.cpp": {
 		"verdict": "model_solution"
+	},
+	"fail_k2cc1.cpp": {
+		"verdict": "incorrect",
+		"except":
+		{
+			"k1": "correct"
+		}
+	},
+	"fail_k2cc2.cpp": {
+		"verdict": "incorrect",
+		"except":
+		{
+			"k1": "correct"
+		}
+	},
+	"fail_k2cc3.cpp": {
+		"verdict": "incorrect",
+		"except":
+		{
+			"k1": "correct"
+		}
+	},
+	"fail_k2cc4.cpp": {
+		"verdict": "incorrect",
+		"except":
+		{
+			"k1": "correct"
+		}
+	},
+	"fail_k1cc1.cpp": {
+		"verdict": "incorrect"
+	},
+	"fail_k1cc2.cpp": {
+		"verdict": "incorrect"
+	},
+	"fail_k1cc3.cpp": {
+		"verdict": "incorrect"
+	},
+	"brute.cpp": {
+		"verdict": "incorrect",
+		"except":
+		{
+			"brute": "correct"
+		}
+	},
+	"fail_ull.cpp": {
+		"verdict": "correct",
+		"except":
+		{
+			"full": "incorrect"
+		}
 	}
 }

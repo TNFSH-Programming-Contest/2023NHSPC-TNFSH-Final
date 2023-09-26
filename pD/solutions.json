@@ -1,5 +1,60 @@
 {
 	"correct.cpp": {
 		"verdict": "model_solution"
+	},
+	"fail_longest_path.cpp": {
+		"verdict": "incorrect"
+	},
+	"condition_fail_intersection.cpp": {
+		"verdict": "incorrect"
+	},
+	"fail_initial.cpp": {
+		"verdict": "correct",
+		"except": {
+			"full": "correct"
+		}
+	},
+	"condition.cpp": {
+		"verdict": "incorrect",
+		"except": {
+			"check": "correct"
+		}
+	},
+	"brute_swap.cpp": {
+		"verdict": "time_limit",
+		"except": {
+			"samples": "correct",
+			"n5": "correct"
+		}
+	},
+	"brute.cpp": {
+		"verdict": "time_limit",
+		"except": {
+			"samples": "correct",
+			"n5": "correct"
+		}
+	},
+	"fail_longlong.cpp": {
+		"verdict": "incorrect",
+		"except": {
+			"check": "correct",
+			"samples": "correct"
+		}
+	},
+	"wrong.cpp": {
+		"verdict": "incorrect"
+	},
+	"fail_zero.cpp": {
+		"verdict": "incorrect"
+	},
+	"n4.cpp": {
+		"verdict": "time_limit",
+		"except": {
+			"n5": "correct",
+			"n4": "correct"
+		}
+	},
+	"condition_fail_continuous.cpp": {
+		"verdict": "incorrect"
 	}
 }

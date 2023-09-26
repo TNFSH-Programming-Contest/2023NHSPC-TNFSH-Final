@@ -1,5 +1,23 @@
 {
 	"correct.cpp": {
 		"verdict": "model_solution"
+	},
+	"factoring.cpp": {
+		"verdict": "correct"
+	},
+	"bad-factoring.cpp": {
+		"verdict": "incorrect"
+	},
+	"fpow-brute.cpp": {
+		"verdict": "correct",
+		"except": {
+			"full": "time_limit"
+		}
+	},
+	"brute.cpp": {
+		"verdict": "correct",
+		"except": {
+			"full": "time_limit"
+		}
 	}
 }

@@ -40,6 +40,9 @@ int main()
             valid = 0;
     }
 
+    if (l[1] != 1 || r[n] != m)
+        valid = 0;
+
     if (valid)
         cout << sum << '\n';
     else

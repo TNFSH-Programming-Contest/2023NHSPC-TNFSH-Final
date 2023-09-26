@@ -27,7 +27,7 @@ def run_solutions():
     for solution in solutions:
         print(solution, flush=True)
         subprocess.run([
-            'tps', 'invoke', os.path.join('solution', solution), '-r'
+            'tps', 'invoke', os.path.join('solution', solution), '-r', '--hard-time-limit=0.5'
         ])
         print(flush=True)
 

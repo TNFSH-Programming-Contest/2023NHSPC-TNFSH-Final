@@ -295,8 +295,8 @@ def verify_problem():
         if not isinstance(problem['has_checker'], bool):
             error('has_checker should be a boolean')
 
-    if not isinstance(problem['time_limit'], float) or problem['time_limit'] < 0.5:
-        error('time_limit should be a number greater or equal to 0.5')
+    if not isinstance(problem['time_limit'], float) or problem['time_limit'] < 0.1:
+        error('time_limit should be a number greater or equal to 0.1')
 
     memory = problem['memory_limit']
     if not isinstance(memory, int) or memory < 1 or memory & (memory - 1) != 0:

@@ -3,7 +3,7 @@
 using namespace std;
 
 int n, m;
-ll a[2005][2005], dp[2][2005][2005];
+ll a[5005][5005], dp[2][5005][5005];
 
 int main()
 {

@@ -33,7 +33,7 @@
 | B | 13<br>$n, q \leq 5000$ | 21<br>$c_i, x_i \leq 10$ | 24<br>$x_i = 1$ | 42<br>無額外限制 |
 | C | 7<br>$N \leq 10$ | 28<br>$N \leq 2 \times 10^5$ | 65<br>無額外限制 |
 | D | 15<br>$a_{i, j} \in \{-1, 1\}$，至少有一個 $a_{i, j} = 1$ | 23<br>$N \times M \leq 50$ | 27<br>$N \times M \leq 5000$ | 35<br>無額外限制 |
-| E | 35<br>$\abs{s} = \abs{t} = 1$ | 65<br>無額外限制 |
+| E | 35<br>$\lvert s \rvert = \lvert t \rvert = 1$ | 65<br>無額外限制 |
 
 <!-- subtasks end -->
 

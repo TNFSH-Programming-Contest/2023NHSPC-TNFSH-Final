@@ -29,3 +29,12 @@
 
 ## 範例輸出
 \testfile{0-01.out}
+
+## 範例說明
+
+在範例中，三個輸出為 `Yes` 的情況如下頁所示：  
+
+\def\svgwidth{\textwidth}
+\begin{center}
+    \input{drawing.pdf_tex}
+\end{center}

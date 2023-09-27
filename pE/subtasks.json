@@ -12,7 +12,7 @@
         "short": {
             "index": 1,
             "score": 35,
-            "text": "$\\abs{s} = \\abs{t} = 1$",
+            "text": "$\\lvert s \\rvert = \\lvert t \\rvert = 1$",
             "validators": ["validator-len1.cpp"]
         },
         "full": {

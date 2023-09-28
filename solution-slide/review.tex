@@ -23,7 +23,6 @@
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
 
-%\newcommand{\CC}[1]{\textsf{\small #1}}% to quote from Computing Curricula 2001
 \newcommand{\CC}[1]{#1}
 
 \newcommand{\Cincluded}{{\small\cmark}}
@@ -164,12 +163,12 @@
 				(4,1)
 				(5,10)
 			};
-			\addplot [color=white] plot coordinates {
-				(1,1) 
+			\addplot plot coordinates {
+				(1,2) 
 				(2,1) 
 				(3,1) 
-				(4,1)
-				(5,1)
+				(4,0)
+				(5,9)
 			};
 			\end{axis}
 		\end{tikzpicture}
@@ -271,7 +270,93 @@
 	善用 \texttt{(unsigned) long long}！
 \end{frame}
 
-\section{B.}
+\section{B. 批量種田 (farming)}
+
+\begin{frame}[fragile]{\btitle{題目敘述}}
+	給一個長度為 $N$ 的序列每個值各自 $c_i$，然後進行多次操作。
+	
+	每次操作給 $l_i, r_i, x_i$ 詢問區間 $[l_i, r_i]$ 有幾個不同數字
+
+	並把 $[l_i,r_i]$ 都改成 $x_i$。 
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務}}
+	\begin{enumerate}
+		\item 只需要驗證輸入是不是合法的道路
+		\item $N,Q \leq 5000$
+		\item $\forall x_i,c_i \leq 10$
+		\item $\forall x_i = 1$
+		\item $N,Q \leq 300000$
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 1 --- $N,Q \leq 5000$}}
+	ㄜ...純粹暴力拿分
+
+	自己加油 ><
+
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 2 --- $\forall x_i,c_i \leq 10$}}
+	\onslide<1->{
+		發現值域全部都不會超過 $10$
+	}
+	
+	\onslide<2->{
+		可以開一個線段樹每個節點第 $i$ 個 bit 表示區間有沒有出現 $i$
+	}
+
+	\onslide<3->{
+		query 區間直接把所有區間 or 起來算幾個 bit 是 $1$
+
+		modify 可以直接用懶標處理
+
+		複雜度 $O(N\log N)$
+	}
+
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 3 --- $\forall x_i = 1$}}
+	\onslide<1->{
+		每次詢問一段區間的同時也會把那段區間全部改成一樣的
+	}
+
+	\onslide<2->{
+		改成 $1$ 之後就不會再改變了
+
+		那就可以直接不用理
+
+		每次都直接暴力修改每個值都只被改到一次
+	}
+
+	\onslide<3->{
+		每次 query 就直接暴力查詢還沒被改成 $1$ 的點
+
+		修改就把它改成 $1$，暴力查詢的部分可以用 set, dsu, map...維護
+
+		複雜度在均攤下是 $O(N\log N)\ or\ O(N \alpha (N))$
+	}
+\end{frame}
+
+\begin{frame}[fragile]{\btitle{子任務 4 --- 無額外限制}}
+	\onslide<1->{
+		考慮結合子題二跟子題三的做法
+
+		考慮相鄰不一樣的數量
+	}
+
+	\onslide<2->{
+		每一次操作最多讓兩個相鄰不一樣的次數 $+2$
+
+		總共的相鄰不一樣的次數最多 $N+2Q$
+	}
+
+	\onslide<3->{
+		如果每個相鄰不同的情況都用線段樹 or set 去做修改和查詢的話
+
+		總複雜度 $O((N+Q)\log N)$
+	}
+\end{frame}
 
 \section{D. 森林道路 (pathway)}
 
@@ -451,4 +536,3 @@
 
 
 \end{document}
-

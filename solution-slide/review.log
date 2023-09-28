@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.11)  25 SEP 2023 22:31
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.11)  28 SEP 2023 16:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1639,7 +1639,7 @@ e .
 \CT@t=\box118
 \@CTcurftwidth=\dimen439
 )
-Package hyperref Info: Option `CJKbookmarks' set `true' on input line 107.
+Package hyperref Info: Option `CJKbookmarks' set `true' on input line 106.
 
 
 Package xeCJK Warning: Undefined CJK default family `\CJKsfdefault' has been
@@ -1655,31 +1655,31 @@ runsystem(rm review.aex)...executed.
 (./review.aux)
 \openout1 = `review.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 108.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-08.
+07.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1715,7 +1715,7 @@ LaTeX Font Info:    ... okay on input line 108.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 108.
+Package hyperref Info: Link coloring OFF on input line 107.
 (./review.out) (./review.out)
 \@outlinefile=\write7
 \openout7 = `review.out'.
@@ -1751,12 +1751,12 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 108.
+ on input line 107.
 
 (./review.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 110.
+(hyperref)                setting the option has no effect on input line 109.
 
 [1
 
@@ -1869,11 +1869,11 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 
  (./review.vrb)
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <14.4> on input line 243.
+(Font)              <14.4> on input line 242.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <10> on input line 243.
+(Font)              <10> on input line 242.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <7> on input line 243.
+(Font)              <7> on input line 242.
  [15
 
 ]
@@ -1897,9 +1897,15 @@ LaTeX Font Info:    External font `xccex10' loaded for size
 
 ] [20
 
-] (./review.toc) [21
+]
+\openout4 = `review.vrb'.
 
-] [22
+ (./review.vrb) [21
+
+]
+\openout4 = `review.vrb'.
+
+ (./review.vrb) [22
 
 ]
 \openout4 = `review.vrb'.
@@ -1909,47 +1915,35 @@ LaTeX Font Info:    External font `xccex10' loaded for size
 ]
 \openout4 = `review.vrb'.
 
- (./review.vrb) [24
 
-]
-\openout4 = `review.vrb'.
+(./review.vrb) [24
 
-
-(./review.vrb) [25
+] (./review.vrb) [25
 
 ] (./review.vrb) [26
-
-] (./review.vrb) [27
 
 ]
 \openout4 = `review.vrb'.
 
  (./review.vrb)
-[28
+[27
 
-]
-\openout4 = `review.vrb'.
+] (./review.vrb) [28
 
- (./review.vrb) [29
+] (./review.vrb) [29
 
 ]
 \openout4 = `review.vrb'.
 
  (./review.vrb) [30
 
-]
-\openout4 = `review.vrb'.
+] (./review.vrb) [31
 
- (./review.vrb) [31
+] (./review.vrb) [32
 
-] (./review.toc) [32
+] (./review.toc) [33
 
-] [33
-
-]
-\openout4 = `review.vrb'.
-
- (./review.vrb) [34
+] [34
 
 ]
 \openout4 = `review.vrb'.
@@ -1959,31 +1953,81 @@ LaTeX Font Info:    External font `xccex10' loaded for size
 ]
 \openout4 = `review.vrb'.
 
- (./review.vrb) [36
+
+(./review.vrb) [36
 
 ]
 \openout4 = `review.vrb'.
 
-
-(./review.vrb) [37
+ (./review.vrb) [37
 
 ] (./review.vrb) [38
 
-]
-\openout4 = `review.vrb'.
-
- (./review.vrb) [39
+] (./review.vrb)
+[39
 
 ]
 \openout4 = `review.vrb'.
 
- (./review.vrb)
-[40
+ (./review.vrb) [40
 
 ]
 \openout4 = `review.vrb'.
 
  (./review.vrb) [41
+
+]
+\openout4 = `review.vrb'.
+
+ (./review.vrb) [42
+
+]
+\openout4 = `review.vrb'.
+
+ (./review.vrb) [43
+
+] (./review.toc) [44
+
+] [45
+
+]
+\openout4 = `review.vrb'.
+
+ (./review.vrb) [46
+
+]
+\openout4 = `review.vrb'.
+
+ (./review.vrb) [47
+
+]
+\openout4 = `review.vrb'.
+
+
+(./review.vrb) [48
+
+]
+\openout4 = `review.vrb'.
+
+ (./review.vrb) [49
+
+] (./review.vrb) [50
+
+]
+\openout4 = `review.vrb'.
+
+ (./review.vrb)
+[51
+
+]
+\openout4 = `review.vrb'.
+
+ (./review.vrb) [52
+
+]
+\openout4 = `review.vrb'.
+
+ (./review.vrb) [53
 
 ]
 \openout4 = `review.vrb'.
@@ -1996,7 +2040,7 @@ csy/m/n/10.95 ) [] ^^Q \OT1/ccr/m/n/10.95 0[]  9\OML/ccm/m/it/10.95 N \OMS/ccsy
  1[]  9\OML/ccm/m/it/10.95 N
  []
 
-) [42
+) [54
 
 ]
 \tf@nav=\write8
@@ -2014,15 +2058,15 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `review.out' has not changed.
-(rerunfilecheck)             Checksum: C006779958C7381BFA36AAA1874E0199;769.
+(rerunfilecheck)             Checksum: 1AB16E1C593C4016D5A350EFBB3FB161;868.
  ) 
 Here is how much of TeX's memory you used:
- 53484 strings out of 477108
- 1306408 string characters out of 5806825
+ 53523 strings out of 477108
+ 1306825 string characters out of 5806825
  1927438 words of memory out of 5000000
- 73664 multiletter control sequences out of 15000+600000
+ 73679 multiletter control sequences out of 15000+600000
  568262 words of font info for 105 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  101i,14n,107p,775b,2156s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on review.pdf (42 pages).
+Output written on review.pdf (54 pages).
